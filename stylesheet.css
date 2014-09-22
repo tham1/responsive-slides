@@ -1,0 +1,165 @@
+/*
+
+Title: Stylesheet Template
+
+Author: Maurice van Cooten
+
+*/
+
+a {
+	color: blue;
+}
+
+a:hover {
+	color: lightblue;
+}
+
+body {
+	background: #eee;
+	font-size: 16px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin:0;
+}
+
+/* Page structure
+------------------------------------------*/
+
+header {
+	margin: 0 auto;
+	padding: 0 auto;
+	width:100%;
+	max-width: 960px;
+}
+
+#wrapper {
+	width:100%;
+	background: #fff;
+	padding:1em 0;
+}
+
+#container {
+	margin: 0 auto;
+	padding: 0 auto;
+	width:100%;
+	max-width: 960px;
+}
+
+footer {
+	margin:0 auto;
+	padding:0 auto;
+	width:100%;
+	max-width:960px;
+}
+
+/* Typography
+------------------------------------------*/
+
+h1,
+h2 {
+	color: navy;
+}
+
+p {
+	color:#333;
+}
+
+/* Typography
+------------------------------------------*/
+
+.rslides-container {
+    
+	border-radius:8px;
+    position: relative;
+    margin: 0 0 1em 0;
+    border: solid 1px #eee;
+    padding: 0.375em;
+    background: #fff;
+}
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.rslides li {
+        -webkit-backface-visibility: hidden;
+        position: absolute;
+        display: none;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+.rslides img {
+        float: left;
+        width:100%;
+    }
+
+
+/**
+ * Slideshow navigator arrows.
+ */
+
+a.rslides_nav {
+    padding: 0.25em;
+    line-height: 1;
+}
+
+a.rslides_nav.prev {
+        float: left;
+    }
+
+a.rslides_nav.next {
+        float: right;
+    }
+
+a.rslides_nav:hover {
+        text-decoration: none;
+    }
+
+
+/**
+ * Slideshow position indicator tabs.
+ */
+
+.rslides_tabs {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1;
+}
+
+.rslides_tabs li {
+        margin: 0.375em 0.25em 0;
+        display: inline-block;
+    }
+
+.rslides_tabs a {
+		text-indent: -9999px;
+		font-size:12px;
+		border-radius:50%;
+        display: block;
+        border: 1px solid;
+        border-color: #ccc;
+        background: #eee;
+        width: 1em;  // 12px
+        height: 1em; // 12px
+    }
+
+.rslides_tabs a:hover {
+            border-color: #000;
+        }
+
+
+/**
+ * Highlight the position indicator tab of currently active slide.
+ */
+
+.rslides_here a {
+    background: #e3e3e3;
+}
+
+

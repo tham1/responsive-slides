@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>The Website Title</title>
+		<meta name="description" content="The page description goes here, if this is the front page the description will be about the website content." />
+		<link rel="stylesheet" href="stylesheet.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="responsiveslides.js"></script>
+
+	</head>
+
+	<body>
+		<header>
+
+			<h1>h1 Header 1</h1>
+
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Things</a></li>
+					<li><a href="#">Junk</a></li>
+					<li class="show"><a href="#">contact</a></li>
+				</ul>
+			</nav>
+
+		</header> <!-- header-->
+
+		<div id="wrapper">
+
+			<div id="container">
+
+			<div class="rslides-container">
+      			<ul class="rslides">
+         			<li><img src="http://markdalgleish.com/projects/stellar.js/demos/images/autumn.jpg"></li>
+          			<li><img src="http://markdalgleish.com/projects/stellar.js/demos/images/summer.jpg"></li>
+				</ul>
+			</div>
+
+				<main>
+
+					<article>
+
+						<h2>h2 Header 2</h2>
+
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+					</article> <!-- .article-->
+
+				</main> <!-- #main-->
+
+				<div id="secondary">
+
+					<article>
+
+						<h2>h2 Header 2</h2>
+
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.</p>
+
+						<p>Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci.</p>
+
+					</article> <!-- article-->
+
+				</div> <!-- #secondary -->
+
+			</div> <!-- #container-->
+
+		</div> <!-- #wrapper-->
+
+		<footer>
+
+			<p>Website by the author</p>
+
+		</footer> <!-- #footer-->
+
+
+		<script>
+				
+			$(function() {
+    $(".rslides").responsiveSlides({
+                    auto: true,             // Boolean: Animate automatically, true or false
+                    speed: 1200,            // Integer: Speed of the transition, in milliseconds
+                    timeout: 4800,          // Integer: Time between slide transitions, in milliseconds
+                    pager: true,            // Boolean: Show pager, true or false
+                    nav: true,              // Boolean: Show navigation, true or false
+                    random: false,          // Boolean: Randomize the order of the slides, true or false
+                    pause: false,           // Boolean: Pause on hover, true or false
+                    pauseControls: false,   // Boolean: Pause when hovering controls, true or false
+                    prevText: '&#8592;',    // String: Text for the "previous" button
+                    nextText: '&#8594;',    // String: Text for the "next" button
+                    maxwidth: '',           // Integer: Max-width of the slideshow, in pixels
+                    navContainer: '',       // Selector: Where auto generated controls should be appended to, default is after the <ul>
+                    manualControls: '',     // Selector: Declare custom pager navigation
+                    namespace: 'rslides',   // String: change the default namespace used
+                    before: function () {}, // Function: Before callback
+                    after: function () {}   // Function: After callback
+                });
+  });
+
+		</script>
+
+
+	</body>
+
+</html>
